@@ -28,3 +28,8 @@ section,footer{
     margin: 2px !important;
     border: #000000 2px solid !important;
 }
+
+.nav-wrapper li :hover,
+.sidenav li :hover{
+        border-bottom: 2px solid rgb(251, 23, 61);
+}
