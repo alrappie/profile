@@ -13,10 +13,10 @@
       <title>Profile!</title>
       <!-- Navbar -->
       <div class="navbar-fixed">
-        <nav class="blue-grey darken-2">
+        <nav class="transparent">
           <div class="container">
             <div class="nav-wrapper">
-              <a href="#home" class="brand-logo right"><ul>AlRappie</ul></a>
+              <a href="#home" class="brand-logo right"><i class="fas fa-paw"></i>AlRappie</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="left hide-on-med-and-down">
                 <li><a href="#about">About<span class="red-text text-darken-1">Me</span></a></li>
@@ -31,12 +31,34 @@
       </div>
 
       <!-- Mobile Navbar -->
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="#about">About <span class="red-text text-darken-1">Me</span></a></li>
-        <li><a href="#clients">Clients</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="sidenav blue-grey darken-2" id="mobile-demo">
+        <li>
+          <div class="user-view">
+            <a href="#"><img class="circle" src="img/al1.jpg"/></a>
+            <p class="cyan-text text-darken-2 name">AlRappie</p>
+            <span class="grey-text darken- email">alravimahesa@gmail.com</span>
+          </div>
+        </li>
+        <li><div class="divider black"></div></li>
+        <li>
+          <a href="https://github.com/alrappie" target="blank">
+            <i class="fab fab fa-github fa-2x white-text"></i>
+            <p class="white-text">Github</p>
+          </a>
+        </li>
+        <li><div class="divider grey"></div></li>
+        <li>
+          <a href="https://www.instagram.com/rockythefatcat.26/" target="blank">
+            <i class="fab fab fa-instagram fa-2x pink-text"></i>
+            <p class="white-text">Instagram Rocky</p>
+          </a>
+        </li>
+        <li><div class="divider black"></div></li>
+        <li class="temp1"><a href="#about" class="white-text">About <span class="red-text text-darken-1">Me</span></a></li>
+        <li class="temp1"><a href="#clients"class="white-text">Clients</a></li>
+        <li class="temp1"><a href="#services"class="white-text">Services</a></li>
+        <li class="temp1"><a href="#portfolio"class="white-text">Portfolio</a></li>
+        <li class="temp1"><a href="#contact"class="white-text">Contact</a></li>
       </ul>
 
       <!-- Section : Slider -->
@@ -74,28 +96,29 @@
       </div>
 
       <!-- About Me -->
-      <section id="about" class="about grey lighten-3 scrollspy">
+      <section id="about" class="about grey darken-4 scrollspy">
         <div class="container">
           <div class="row">
-            <h3 class="center light">About <span class="red-text">Me</span></h3>
-            <div class="col m6 light">
-              <h5>I'm Proffesionals</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor recusandae numquam mollitia. Optio, vero voluptates iusto aliquam, delectus officia sunt doloremque fugit tenetur voluptate dolore odio nemo velit quis.</p>
+            <h3 class="center light white-text">About <span class="red-text">Me</span></h3>
+            <div class="col m6 s12 light">
+              <h5 class="red-text text-accent-4 ">I'm Proffesionals</h5>
+              <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor recusandae numquam mollitia. Optio, vero voluptates iusto aliquam, delectus officia sunt doloremque fugit tenetur voluptate dolore odio nemo velit quis.</p>
             </div>
-            <div class="col m6 ">
-              <p class="black-text text-darken-4">SLEEPING</p>
+            <div class="col m6 s12">
+              <p class="teal-text text-lighten-5">SLEEPING</p>
               <div class="progress">
                 <div class="determinate" style="width: 95%"></div>
               </div>
-              <p class="black-text text-darken-4">EATING</p>
+              <p class="teal-text text-lighten-5">EATING</p>
               <div class="progress">
                 <div class="determinate" style="width: 87%"></div>
               </div>
-                <p class="black-text text-darken-4">IDLE</p>
+                <p class="teal-text text-lighten-5">IDLE</p>
               <div class="progress">
                 <div class="determinate" style="width: 90%"></div>
               </div>
             </div>
+            <a class="waves-effect waves-red btn pulse right">More</a>
           </div>
         </div>
       </section>
@@ -120,26 +143,26 @@
       </div>
 
       <!-- Service -->
-      <section id="services" class="services grey lighten-3 scrollspy">
+      <section id="services" class="services grey darken-4 scrollspy">
         <div class="container">
           <div class="row">
-            <h3 class="light center"> <span class="red-text darken-4">My</span> Services</h3>
+            <h3 class="light center white-text"> <span class="red-text darken-4">My</span> Services</h3>
             <div class="col m4 s12">
-              <div class="card-panel center">
+              <div class="card-panel hoverable center">
                 <i class="material-icons medium">airline_seat_individual_suite</i>
                 <h5>Sleeping</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, officiis?</p>
               </div>
             </div>
             <div class="col m4 s12">
-              <div class="card-panel center">
+              <div class="card-panel hoverable center">
                 <i class="material-icons medium">pets</i>
                 <h5>Idle</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, officiis?</p>
               </div>
             </div>
             <div class="col m4 s12">
-              <div class="card-panel center">
+              <div class="card-panel hoverable center">
                 <i class="material-icons medium">thumb_up</i>
                 <h5>Eating</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, officiis?</p>
@@ -148,11 +171,11 @@
           </div>
         </div>
       </section>
-      
+
       <!-- Portfolio -->
-      <section id="portfolio" class="portfolio scrollspy">
+      <section id="portfolio" class="portfolio scrollspy grey darken-3">
         <div class="container">
-          <h3 class="light center grey-text text-darken-3">Portfolio</h3>
+          <h3 class="light center white-text text-darken-3">Gallery</h3>
           <div class="row">
             <div class="col m3 s12">
               <img src="img/IMG_20210420_183700_557.jpg" class="responsive-img materialboxed" alt="">
@@ -185,9 +208,9 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="contact grey lighten-3 scrollspy">
+      <section id="contact" class="contact grey darken-4 scrollspy">
         <div class="container">
-          <h3 class="center">Contact <span class="red-text">Me</span></h3>
+          <h3 class="center white-text">Contact <span class="red-text">Me</span></h3>
           <div class="row">
             <div class="col m5 s12">
               <div class="card-panel pink accent-2 center">
@@ -223,7 +246,7 @@
                     <textarea name="message" id="message" class="materialize-textarea"></textarea>
                     <label for="message">Message</label>
                   </div>
-                  <button type="submit" class="btn pink accent-3">Send</button>
+                  <a href="" class="pink accent-3 waves-effect waves-light btn pulse">More</a>
                 </div>
               </form>
             </div>
@@ -232,13 +255,12 @@
       </section>
 
       <!-- Footer -->
-      <footer class="center blue-grey darken-2 white-text">
+      <footer class="center blue-grey darken-4 white-text">
         <a href="https://github.com/alrappie" target="_blank" class="white-text">
           <i class="fab fa-github fa-4x"></i>
         </a>
         <p class="flow-text">Alrappie &copy; 2021 </p>
       </footer>
-
 
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -252,14 +274,18 @@
         const sliderSet = document.querySelector('.slider');
         M.Slider.init(sliderSet,{
           indicators: false,
-          height:500,
+          height:610,
           transition: 500,
           interval:4500,
         });
 
         //Paralax set
         const parallax = document.querySelector('.parallax');
-        M.Parallax.init(parallax,{});
+        M.Parallax.init(parallax,{
+          indicators:false,
+          height: 610,
+          interval: 3000
+        });
 
         //Materialboxed set
         const mb = document.querySelectorAll('.materialboxed');

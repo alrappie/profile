@@ -30,6 +30,20 @@ section,footer{
 }
 
 .nav-wrapper li :hover,
-.sidenav li :hover{
-        border-bottom: 2px solid rgb(251, 23, 61);
+.sidenav .temp1 :hover{
+        border-bottom: 2px solid rgb(185, 40, 40);
+}
+.navbar-fixed ul li a,
+.brand-logo{
+    color: lightblue ;
+    font-weight: bolder !important;
+    /* 1 pixel black shadow to left, top, right and bottom */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+}
+.navbar-fixed{
+    position: absolute;
+}
+.temp1 a,
+.sidenav p{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
 }
