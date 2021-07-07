@@ -1,7 +1,8 @@
 .slider h3,
 .slider h5,
-.clients h3 {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+.clients h3,
+.clients h2 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) !important;
 }
 
 .parallax-container{
@@ -34,7 +35,13 @@ section,footer{
         border-bottom: 2px solid rgb(185, 40, 40);
 }
 .navbar-fixed ul li a,
-.brand-logo{
+.brand-logo,
+.portfolio h2,
+.portfolio h3,
+.services h3,
+#clients h3,
+.about h3,
+.contact h3{
     color: lightblue ;
     font-weight: bolder !important;
     /* 1 pixel black shadow to left, top, right and bottom */
@@ -42,6 +49,7 @@ section,footer{
 }
 .navbar-fixed{
     position: absolute;
+    transition: top .6s;
 }
 .temp1 a,
 .sidenav p{

@@ -16,12 +16,15 @@
         <nav class="transparent">
           <div class="container">
             <div class="nav-wrapper">
-              <a href="#home" class="brand-logo right"><i class="fas fa-paw"></i>AlRappie</a>
+              <a href="#home" class="brand-logo center"><i class="fas fa-paw"></i>AlRappie</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="left hide-on-med-and-down">
                 <li><a href="#about">About<span class="red-text text-darken-1">Me</span></a></li>
                 <li><a href="#clients">Clients</a></li>
                 <li><a href="#services">Services</a></li>
+
+              </ul>
+              <ul class="right hide-on-med-and-down"> 
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
@@ -129,13 +132,13 @@
         <div class="container clients">
           <h3 class="center orange-text darken-2"> My Clients</h3>
           <div class="row">
-            <div class="col m4 center">
+            <div class="col m4 s12 center">
               <img src="img/tokopedia.png" alt="">
             </div>
-            <div class="col m4 center">
+            <div class="col m4 s12 center">
               <img src="img/traveloka.png" alt="">
             </div>
-            <div class="col m4 center">
+            <div class="col m4 s12 center">
               <img src="img/gojek.png" alt="">
             </div>
           </div>
@@ -205,6 +208,19 @@
             </div>
           </div>
         </div>
+
+        <h2 class="light center indigo-text text-lighten-5" style="margin-bottom:-30px">More  <span class="brown-text text-lighten-1">Pictures</span> of <span class="brown-text text-lighten-2">Me!</span></h2>
+        <div class="carousel" style="margin-bottom: -30px; margin-top: -40px;">
+          <a class="carousel-item" href="#one!"><img src="img/carousel1.jfif"></a>
+          <a class="carousel-item" href="#two!"><img src="img/carousel2.jfif"></a>
+          <a class="carousel-item" href="#three!"><img src="img/carousel3.jfif"></a>
+          <a class="carousel-item" href="#four!"><img src="img/carousel4.jfif"></a>
+          <a class="carousel-item" href="#five!"><img src="img/carousel5.jfif"></a>
+          <a class="carousel-item" href="#six!"><img src="img/carousel6.jfif"></a>
+          <a class="carousel-item" href="#seven!"><img src="img/carousel7.jfif"></a>
+          <a class="carousel-item" href="#eigth!"><img src="img/carousel8.jfif"></a>
+        </div>
+
       </section>
 
       <!-- Contact -->
@@ -296,6 +312,28 @@
         M.ScrollSpy.init(ss,{
           scrollOffset: 60,
         });
+
+        //Carousel
+        const carousell = document.querySelectorAll('.carousel');
+        M.Carousel.init(carousell,{
+          indicators: true
+        }); 
+        
+        //ngilangin navbar klo scroll
+        let lastScrollTop=0;
+        temp01 = document.querySelector('.navbar-fixed');
+        window.addEventListener("scroll",function(){
+          let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if(scrollTop > lastScrollTop){
+            temp01.style.top="-80px";
+            
+          }else{
+            temp01.style.top="0";
+          }
+          lastScrollTop = scrollTop;
+        })
+
+
       </script>
     </body>
   </html>
