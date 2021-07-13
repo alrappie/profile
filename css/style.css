@@ -55,3 +55,89 @@ section,footer{
 .sidenav p{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
 }
+.toggle
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.toggle ion-icon
+{
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+    margin-left: 8px;
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close
+{
+    display: block;
+}
+.toggle ion-icon.close,
+.toggle.active ion-icon.open
+{
+    display: none;
+}
+.navigation
+{
+    position: fixed;
+    top: 80px;
+    left: 5px;
+    bottom: 20px; 
+    width: 220px;
+    height: 320px;
+    border-radius: 10px;
+    box-sizing: initial;
+    background: #263238 ;
+    transition: .5s;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1000;
+}
+.navigation .background img
+{
+    width: 110%;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.navigation .asd img
+{
+    display: block;
+}
+.navigation .asd
+{
+    position: relative;
+    margin-left: 5px;
+    text-shadow:1px 1px #000000;
+}
+.navigation .asd p{
+    margin-top: 0px;
+}
+.navigation.active
+{
+    opacity: 1;
+}
+.navigation ul li a.fun
+{
+    margin-top: 15px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.navigation ul li p.fin
+{
+    display: inline-block;
+}
+.navigation ul li .fab
+{
+    margin-left: 5px;
+}
