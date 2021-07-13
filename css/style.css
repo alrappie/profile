@@ -91,7 +91,7 @@ section,footer{
     top: 80px;
     left: 5px;
     bottom: 20px; 
-    width: 220px;
+    width: 240px;
     height: 320px;
     border-radius: 10px;
     box-sizing: initial;
@@ -122,6 +122,7 @@ section,footer{
 }
 .navigation .asd p{
     margin-top: 0px;
+    font-weight: bold;
 }
 .navigation.active
 {
